@@ -1,0 +1,19 @@
+create database xprueba;
+use xprueba;
+create table xprueba.sensor(
+	id int auto_increment primary key,
+	fecha_registro varchar(40) not null,
+	temperatura float not null,
+	humedad_relativa float not null,
+	presion_atmosferica float not null,
+	altitud float not null,
+	indice_uv float not null,
+	longitud_onda_visible float not null,
+	longitud_onda_infrarrojo float not null,
+	precipitacion_lluvia float not null,
+	velocidad_viento float not null,
+	direccion_viento float not null,
+	nivel_carga float not null,
+	intensidad_luz float not null,
+	id_estacion int not null
+);
