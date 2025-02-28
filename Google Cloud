@@ -4,3 +4,15 @@ Instalar Servidor de Mysql en Google Cloud
 2 - sudo apt-get install mysql-server
 3 - sudo service mysql start
 4 - sudo mysql
+5 - show databases;
+6 - use mysql;
+7 - show tables;
+8 - select host,user,plugin from user;
+
+
+
+
+
+
+
+
