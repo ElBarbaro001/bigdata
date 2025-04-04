@@ -1,7 +1,7 @@
 import pandas as pd
 from matplotlib.pyplot import figure,subplot,title,pie,show
 from sqlalchemy import create_engine
-cnx = create_engine('mysql+pymysql://root:root@127.0.0.1/prueba')    
-consulta = pd.read_sql('select id,temperatura from prueba.sensor ', cnx) 
-consulta.plot(x='cantidad',y='costo',kind='bar')
+conexionDB = create_engine('mysql+pymysql://root:root@127.0.0.1/prueba')    
+consulta = pd.read_sql('select id,temperatura from prueba.sensor limit 10;', conexionDB) 
+consulta.plot(x='id',y='temperatura',kind='bar')
 show()
