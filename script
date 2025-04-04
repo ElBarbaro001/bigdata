@@ -1,6 +1,6 @@
-create database xprueba;
-use xprueba;
-create table xprueba.sensor(
+create database prueba;
+use prueba;
+create table prueba.sensor(
 	id int auto_increment primary key,
 	fecha_registro varchar(40) not null,
 	temperatura float not null,
@@ -17,5 +17,3 @@ create table xprueba.sensor(
 	intensidad_luz float not null,
 	id_estacion int not null
 );
-select * from xprueba.sensor;
-insert into xprueba.sensor values (null,current_timestamp,25.3,25.3,25.3,25.3,25.3,25.3,25.3,25.3,25.3,25.3,25.3,25.3,1);
