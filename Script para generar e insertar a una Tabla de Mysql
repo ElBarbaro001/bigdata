@@ -4,7 +4,7 @@ import random
 
 # Crear conexión con la base de datos
 try:
-    engine = create_engine("mysql+pymysql://root:root@localhost/xprueba")
+    engine = create_engine("mysql+pymysql://root:root@localhost/prueba")
     with engine.connect() as connection:
         # Iniciar transacción
         with connection.begin():
